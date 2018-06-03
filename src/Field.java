@@ -15,9 +15,12 @@ public class Field {
         for (int i = 0; i < 145; i++) {
             String[] line = f.readLine().split(",");
             for (int j = 0; j < 145; j++) {
-                field[i][j] = Integer.parseInt(line[j]);
+                field[j][i] = Integer.parseInt(line[j]);
             }
         }
+    }
+    public static void main(String[] args) throws IOException, URISyntaxException{
+        System.out.println(new Field().field[40][44]);
     }
 
 
