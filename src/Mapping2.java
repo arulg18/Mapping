@@ -6,14 +6,14 @@ import java.util.LinkedList;
 import java.util.ListIterator;
 import java.util.Stack;
 
-public class Mapping {
+public class Mapping2 {
 
     public Field field;
     boolean[][] visited;
     Stack<Node> pathway;
 
     public static void main(String[] args) throws IOException, URISyntaxException {
-        Mapping map = new Mapping();
+        Mapping2 map = new Mapping2();
 
         map.search(new Node(26, 62), new Node(26, 60));
 
@@ -21,7 +21,7 @@ public class Mapping {
 
 
     }
-    public Mapping() throws IOException, URISyntaxException {
+    public Mapping2() throws IOException, URISyntaxException {
         field = new Field();
         visited = new boolean[field.field.length][field.field[0].length];
         pathway = new Stack<>();
