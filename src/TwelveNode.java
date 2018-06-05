@@ -8,11 +8,11 @@ public class TwelveNode {
     public static int BALANCE2 = 3;
     public static int RELIC = 4;
 
-    public int[][] coordinates = {//change this ordering to the correct one later
-            {36,24},
-            {24,48},
-            {24,120},
+    public int[][] coordinates = {
             {24,84},
+            {36,24},
+            {24,120},
+            {24,48},
             {48,120}
     };
     public boolean[][]straight = {
@@ -24,7 +24,8 @@ public class TwelveNode {
     };
 
 
-    public int[][] getCmd(int[]path){ //pass in an size 2 array containing beginning id and end id
+    public int[][] getCmd(int start, int stop){ //pass in constant ids
+        int path[] = {start,stop};
         int j =1;
         for (int i = 0; i<2;i++) {
             if (straight[path[i]][path[j]])//if the path is straight
@@ -34,20 +35,23 @@ public class TwelveNode {
             }
             else if(path[i]==CRYPTO1&& path[j]==CRYPTO2)
             {
-                int[][] retval = {{i},coordinates[CRYPTO1],{36,72},coordinates[CRYPTO1]};
+                int[][] retval = {{i},coordinates[CRYPTO1],{36,72},coordinates[CRYPTO2]};
                 return retval;
             }
             else if(path[i]==CRYPTO1&&path[j]==RELIC)
             {
-                //hardcode path
+                int[][] retval = {{i},coordinates[CRYPTO1],{48,120},coordinates[RELIC]};
+                return retval;
             }
             else if(path[i]==CRYPTO2&&path[j]==BALANCE1)
             {
-                //hardcode path
+                int[][] retval = {{i},coordinates[CRYPTO2],{48,48},{24,84},coordinates[BALANCE1]};
+                return retval;
             }
             else if(path[i]==CRYPTO2&&path[j]==RELIC)
             {
-                //hardcode path
+                int[][] retval = {{i},coordinates[CRYPTO2],{36,96},coordinates[RELIC]};
+                return retval;
             }
             else if(path[i]==BALANCE2&&path[j]==RELIC)
             {
@@ -58,8 +62,8 @@ public class TwelveNode {
         return new int[1][2];
     }
 
-    public int[][] getCommands(int[]path){
-        int[][] temp = getCmd(path);
+    public int[][] getCommands(int start, int end){
+        int[][] temp = getCmd(start, end);
         int[][] retval = new int [temp.length][2];
         if(temp[0][0]==0)
         {
