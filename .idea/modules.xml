@@ -3,6 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Mapping.iml" filepath="$PROJECT_DIR$/Mapping.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../OpenCV DO NOT TOUCH/opencv/sources/modules/java/android_sdk/android_lib/android_lib.iml" filepath="$PROJECT_DIR$/../../OpenCV DO NOT TOUCH/opencv/sources/modules/java/android_sdk/android_lib/android_lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../OpenCV DO NOT TOUCH/opencv/sources/platforms/maven/opencv-it/src/test/test.iml" filepath="$PROJECT_DIR$/../../OpenCV DO NOT TOUCH/opencv/sources/platforms/maven/opencv-it/src/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../OpenCV DO NOT TOUCH/opencv/sources/samples/android/tutorial-1-camerapreview/tutorial-1-camerapreview.iml" filepath="$PROJECT_DIR$/../../OpenCV DO NOT TOUCH/opencv/sources/samples/android/tutorial-1-camerapreview/tutorial-1-camerapreview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../OpenCV DO NOT TOUCH/opencv/sources/samples/android/tutorial-2-mixedprocessing/tutorial-2-mixedprocessing.iml" filepath="$PROJECT_DIR$/../../OpenCV DO NOT TOUCH/opencv/sources/samples/android/tutorial-2-mixedprocessing/tutorial-2-mixedprocessing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../OpenCV DO NOT TOUCH/opencv/sources/samples/android/tutorial-3-cameracontrol/tutorial-3-cameracontrol.iml" filepath="$PROJECT_DIR$/../../OpenCV DO NOT TOUCH/opencv/sources/samples/android/tutorial-3-cameracontrol/tutorial-3-cameracontrol.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../OpenCV DO NOT TOUCH/opencv/sources/samples/android/tutorial-4-opencl/tutorial-4-opencl.iml" filepath="$PROJECT_DIR$/../../OpenCV DO NOT TOUCH/opencv/sources/samples/android/tutorial-4-opencl/tutorial-4-opencl.iml" />
     </modules>
   </component>
 </project>
